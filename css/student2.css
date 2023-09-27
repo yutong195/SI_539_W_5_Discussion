@@ -43,5 +43,21 @@ body{
 
  div.gallery {
    display: grid;
-   
+   grid-template-columns: repeat(3, 250px);
+   gap: 10px;
+   border: 1px solid #ccc; /* Add a border to the grid container */
+   width: 90%;
+   align-content: center;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+
+ div.gallery img{
+   width: 100%;
+   border:6px dashed blue;
+ }
+
+ div.gallery img:last-child {
+   grid-column: 1 / 4;
  }
